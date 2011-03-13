@@ -1,0 +1,1266 @@
+\documentclass[handout,notes=show]{transparents}
+
+\pdfinfo
+{
+  /Title       (Les logiciels libres : l'informatique à la portée de tous)
+  /Creator     (LaTeX Beamer)
+  /Author      (Ludovic Grossard)
+}
+
+\begin{document}
+
+\title[Les logiciels libres : l'informatique à la portée de tous]{Les logiciels libres :\\l'informatique à la portée de tous}
+\institute{Alternatives87}
+\author{Sylvain Floury et Ludovic Grossard}
+
+\date{1\ier{} avril 2011}
+\logo{}
+
+\frame{\titlepage}
+
+\begin{frame}
+\vfill
+\begin{center}
+\begin{Huge}
+\textbf{\highlighton{Qu'est-ce qu'un logiciel~libre ?}}
+\end{Huge}
+\end{center}
+\vfill
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Les logiciels libres sont partout}
+\framesubtitle{et peut-être déjà chez vous\dots{}}
+
+\pause
+
+Avez-vous ?...
+\begin{itemize}
+\item une free,live,darty,alice,c,neuf box ?
+\item un lecteur dvd/divx ?
+\item un disque dur multimédia ?
+\item un assistant personnel/lecteur multimédia
+\item un routeur wifi avec administration html ?
+\item un téléphone wifi ?
+\item bien d'autres choses\dots{}
+\end{itemize}
+\pause
+\begin{center}
+\begin{large}
+Alors vous utilisez probablement déjà des logiciels libres
+\end{large}
+\end{center}
+
+\note<3>{tiré de la présentation de Gilles Blanc : \url{http://gblanc.blogs.linagora.com/index.php/post/2009/10/13/conference-April/Eyrolles-\%3A-le-debrief}\par}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Qu'est-ce qu'un logiciel ?}
+\begin{itemize}
+\item Une application qui répond à un besoin (traitement de texte, programme de dessin, jeu\dots{}), \pause
+\item une suite d'instructions invisibles (et incompréhensibles) pour l'utilisateur.\pause
+\vfill
+\begin{beamerboxesrounded}[shadow=true]{Extrait du navigateur firefox}
+\begin{verbatim}
+01101100 01101001 01100010 01110000 01110100 01101000
+01110010 01100101 01100001 01100100 00101110 01110011
+01101111 00101110 00110000 00000000 01011111 01001010 
+01110110 01011111 01010010 01100101 01100111 01101001
+\end{verbatim}
+\end{beamerboxesrounded}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Le travail du programmeur}
+\framesubtitle{Retour aux sources}
+\vfill
+Heureusement, le programmeur travaille sur une version plus\dots{} compréhensible (pour lui en tout cas) : \highlighton{le code source}
+\pause
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/code_firefox}
+\end{center}
+\pause
+\begin{center}
+Le code source est utilisé pour créer le logiciel (les 0 et les 1)
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Le code source : la recette de cuisine}
+\framesubtitle{Vous faites pareil à la maison}
+
+\begin{columns}
+
+\begin{column}{0.45\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/recette}
+\end{center}
+\end{column}
+
+\begin{column}{0.1\textwidth}
+\begin{center}
+\includegraphics[width=1\textwidth]{images/fleche}
+\end{center}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sable_chocolat}
+\end{center}
+\end{column}
+\end{columns}
+
+\note{flèche : \url{http://www.openclipart.org/detail/30667}\par}
+\note{Recette de cuisine : \url{http://www.cuisine-libre.fr}\par}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Qu'est-ce qu'un logiciel propriétaire ?}
+\framesubtitle{privateur diraient certains\dots{}}
+
+\vfill
+\pause 
+Vous avez le produit fini\dots{}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/sable_chocolat}
+\end{center}
+\pause 
+\begin{flushright}
+\dots{}mais pas la recette
+\end{flushright}
+
+\begin{footnotesize}
+\begin{description}
+\item[Je voudrais en faire chez moi\dots{}\pause] Non, c'est interdit. La recette est secrète.\pause
+\item[mais je voudrais modifier la recette\dots{}\pause] Non, c'est interdit. La recette est secrète.\pause
+\item[Je peux tenter de deviner les ingrédients ?\pause] Non, c'est interdit.\pause
+\item[Je peux en donner à mes amis ?\pause] Non, c'est interdit. Il doivent acheter les leurs.\pause
+\item[Je peux les manger n'importe où ?\pause] Non, c'est interdit. Vous les mangez chez-vous.
+\end{description}
+\end{footnotesize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Qu'est-ce qu'un logiciel libre ?}
+\framesubtitle{Les quatre libertés\dots{}}
+
+\vfill
+Avec le logiciel libre, vous avez la recette (le code source). Vous pouvez :
+\begin{itemize} 
+\item manger autant de gâteaux que vous voulez, où vous voulez,\pause
+\item étudier la recette et faire vos propres gâteaux,\pause
+\item en donner à vos amis, même en vendre (mais vous devez donner la recette avec)\pause
+\item modifier la recette et redistribuer vos modifications\pause
+\end{itemize}
+\vfill
+Le logiciel libre vous garantit quatre libertés fondamentales :\pause
+\vfill
+\begin{enumerate}
+\item utiliser\pause
+\item étudier\pause
+\item partager\pause
+\item modifier
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Richard Stallman}
+\framesubtitle{Le père des logiciels libres}
+
+\begin{columns}
+
+\begin{column}{0.45\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/stallman}
+\end{center}
+\end{column}
+
+\begin{column}{0.55\textwidth}
+\begin{center}
+\begin{itemize}
+\item crée la fondation du logiciel libre en 1985 (Free Software fundation ou FSF)
+\item Projet GNU : conception d'un système d'exploitation complet et entièrement libre
+\item Base légale des logiciels libres : GNU GPL
+\item tout travail dérivé reste libre
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+\vfill
+\begin{center}
+Stallman : << Je peux définir le logiciel libre en trois mots :\par \highlighton{liberté}, \highlighton{égalité}, \highlighton{fraternité} >>
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{La philosophie du libre}
+
+\begin{description}
+\item[Entraide : ] il existe une importante communauté d'utilisateurs de logiciels libres,
+\item[Partage : ]les développeurs mettent leurs programmes à disposition de la communauté, vous êtes libre d'en faire ce que bon vous semble,
+\item[Interaction : ] entre utilisateurs et programmeurs (rapports de bogues, demande de nouvelles fonctionnalités, internationalisation, écriture de documentation, envoi de correctifs).
+\end{description}
+\end{frame}
+
+\begin{frame}
+\frametitle{La philosophie du libre}
+\vfill
+Les logiciels libres ne peuvent être dissociés d'une vision philosophique du monde dont le point d'orgue est le partage de la connaissance.
+\vfill
+Partage de la connaissance obtenu grâce à l'accès pour tous aux outils modernes de diffusion du savoir.
+\vfill
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pourquoi utiliser des logiciels libres ?}
+\vfill\vfill\vfill
+\begin{itemize}
+\item aspect financier\vfill
+\item besoin de briser la dépendance technologique qui nous lie à quelques entreprises éditrices de logiciels\vfill
+\item s'assurer de la pérennité d'un logiciel\vfill
+\item respect des standards ouverts\vfill
+\item possibilité de choisir les logiciels que l'on souhaite utiliser\vfill
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\vfill
+\begin{center}
+\begin{Huge}
+\textbf{\highlighton{Quelques logiciels libres célèbres}}
+\end{Huge}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Firefox}
+\vfill
+Navigateur Web disponible sous différentes plateformes :
+\vfill
+
+\begin{columns}
+\begin{column}{0.20\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/2-presentation_ll/firefox-wordmark-vertical}
+\end{center}
+\end{column}
+
+\begin{column}{0.80\textwidth}
+\begin{center}
+\begin{itemize}
+\item Linux\vfill
+\item Mac OS\vfill
+\item Windows\vfill
+\item Smartphone (Android)\vfill
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+
+\note{Navigateur développé par la fondation Mozilla et lancé en novembre 2004, il est particulièrement populaire. 
+Navigateur le plus utilisé en europe la version 3.6 a été téléchargée près de 400 millions de fois (\url{http://www.mozilla.com/en-US/firefox/stats/}).
+Il a joué un rôle particulièrement important au début des années 2000 (alternative initiée avec Mozilla Navigator). À cette époque le navigateur Internet Explorer 6 est en situation de monopole et l'apparition de Firefox relance une saine concurrence et incitera Microsoft à lancer Internet Explorer 7 après plus de 5 ans.\par}
+\note{-----\par}
+\note{Il peut être intéressant de relever qu'il y a copyright sur le nom Firefox\par}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Thunderbird}
+\vfill
+Client de messagerie disponible sous différentes plateformes :
+\vfill
+
+\begin{columns}
+\begin{column}{0.20\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/2-presentation_ll/thunderbird-wordmark-vertical}
+\end{center}
+\end{column}
+
+\begin{column}{0.80\textwidth}
+\begin{center}
+\begin{itemize}
+\item Linux\vfill
+\item Mac OS\vfill
+\item Windows\vfill
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+
+\note{Lui aussi est développé par la fondation Mozilla et fut également lancé en 2004.\par}
+\note{-----\par}
+\note{Voir si l'on bascule sur les logiciels.\par}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{OpenOffice.org}
+\vfill
+Suite bureautique avec les logiciels suivants :
+\vfill
+
+\begin{columns}
+\begin{column}{0.20\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/2-presentation_ll/openoffice}
+\end{center}
+\end{column}
+
+\begin{column}{0.80\textwidth}
+\begin{center}
+\begin{itemize}
+\item Writer (traitement de texte)\vfill
+\item Calc (tableau)\vfill
+\item Impress (logiciel de présentation)\vfill
+\item Base (base de données)\vfill
+\item Module de dessin vectoriel\vfill
+\item Éditeur de formules mathématiques\vfill
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+
+\note{OOo est dérivée de la suite StarOffice acquise par Sun Microsystem qui décida alors de libérer le code source.\par}
+\note{-----\par}
+\note{Suite au rachat de Sun par Oracle plusieurs membres du projet OpenOffice ont souhaité réaliser un fork du projet et ont créé le projet LibreOffice.\par}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{LibreOffice}
+\vfill
+Suite bureautique dérivée de OpenOffice.org (Fork). Elle comprend les mêmes éléments :
+\vfill
+
+\begin{columns}
+\begin{column}{0.20\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/2-presentation_ll/libreoffice}
+\end{center}
+\end{column}
+
+\begin{column}{0.80\textwidth}
+\begin{center}
+\begin{itemize}
+\item Writer (traitement de texte)\vfill
+\item Calc (tableau)\vfill
+\item Impress (logiciel de présentation)\vfill
+\item Base (base de données)\vfill
+\item Module de dessin vectoriel\vfill
+\item Éditeur de formules mathématiques\vfill
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+\vfill\vfill
+Elle est gérée par The Document Foundation.
+
+\note{\par}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{GIMP}
+\vfill
+Outil de manipulation d'images et de photos. Il dispose des fonctionnalités suivantes:
+\vfill
+
+\begin{columns}
+\begin{column}{0.20\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/2-presentation_ll/gimp}
+\end{center}
+\end{column}
+
+\begin{column}{0.80\textwidth}
+\begin{center}
+\begin{itemize}
+\item Suite complète d'outils de dessin\vfill
+\item Outils de sélection\vfill
+\item Outils de transformation\vfill
+\item Gestion de nombreux formats de fichiers dont : GIF, JPEG, PNG, XPM, TIFF, TGA, MPEG, PS, PDF, PCX, BMP\vfill
+\item Capacités avancées de script (Perl, Python, Ruby, C\#)\vfill
+\item Gestion des calques et canaux\vfill
+\item Greffons qui autorisent l'extension du programme\vfill
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+
+\note{GIMP est un acronyme qui signifie GNU Image Manipulation Program.\par}
+\note{Outils de transformations tels que rotation, mise à l'échelle, cisaillement et miroir.\par}
+\note{Outils de dessin comprenant un crayon, un pinceau, un aérographe, un outil de clonage...\par}
+\note{Outils de sélection tels que rectangle, ellipse, main levée, par couleur, contiguë, courbes de Bézier et ciseaux intelligents.\par}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{MediWiki}
+\vfill
+Moteur de Wikipédia, ce logiciel libre est écrit pour fonctionner sur un serveur Web.\\
+Il est utilisé pour les différents projets de la Wikimedia Foundation :
+
+\begin{columns}
+\begin{column}{0.20\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{images/2-presentation_ll/mediawiki_logo}
+\end{center}
+\end{column}
+
+\begin{column}{0.80\textwidth}
+\begin{center}
+\begin{itemize}
+\item Wikipédia\vfill
+\item WikiBooks\vfill
+\item Wiktionary\vfill
+\item Wikiquote\vfill
+\item Wikinews\vfill
+\item Wikispecies\vfill
+\end{itemize}
+
+\end{center}
+\end{column}
+\end{columns}
+
+\note{MediaWiki est ecrit en PHP et fonctionne avec PostgreSQL ou MySQL.\par}
+
+\end{frame}
+
+\begin{frame}
+\vfill
+\begin{center}
+\begin{Huge}
+\textbf{\highlighton{Encore plus loin avec GNU/Linux}}
+\end{Huge}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Le projet GNU}
+\framesubtitle{GNU's not Unix}
+
+\begin{columns}
+
+\begin{column}{0.7\textwidth}
+\begin{itemize}
+\item Projet GNU : conception d'un système d'exploitation complet et entièrement libre
+\item l'écriture des briques de base commence en janvier 1984
+\item début des années 90, tous les composants majeurs sont écrits\dots{}
+\item \dots{}à l'exception du \highlighton{noyau}
+\item Un noyau était prévu (hurd), mais sa réalisation a pris plus de temps que prévu.
+\end{itemize}
+\end{column}
+\begin{column}{0.3\textwidth}
+\includegraphics[width=\textwidth]{images/gnu.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Le noyau Linux}
+
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\includegraphics[width=\textwidth]{images/torvalds.jpeg}
+\end{column}
+\begin{column}{0.7\textwidth}
+\begin{itemize}
+\item En 1991, Linus Torvalds commence à travailler sur un noyau et le diffuse sur internet sous la licence GPL
+\item Le projet GNU adopte le noyau de Linus Torvalds en attendant que Hurd soit opérationnel
+\item on parle de système \highlighton{GNU / Linux}
+\item le système d'exploitation libre est enfin complet (ou presque !)
+\item \dots{} car les interfaces graphiques dignes de ce nom arrivent bien plus tard : 
+	\begin{itemize}
+	\item KDE en 1996
+	\item GNOME en 1997
+	\end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Qu'est-ce qu'une distribution ?}
+
+\vfill\vfill
+\begin{itemize}
+\item C'est un \highlighton{ensemble cohérent} de programmes rassemblés sur un ou plusieurs CD / DVD,\vfill
+\item Un programme spécifique, développé par l'éditeur, facilite l'installation de GNU/Linux,\vfill
+\item Les distributions contiennent leurs propres outils d'administration de l'environnement.
+\end{itemize}
+\vfill\vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Qu'est-ce qu'une distribution ?}
+
+\vfill
+Les distributions n'ont pas toutes la même coloration :
+\vfill
+\begin{itemize}
+\item Station de travail
+\item Serveur
+\item Station multimédia
+\item Débutant ou confirmé
+\end{itemize}
+\vfill
+\begin{center}
+\highlighton{Il s'agit de toutes façons du même système et globalement des mêmes programmes}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Les principales distributions}
+
+\begin{small}
+
+\vfill
+
+\begin{columns}[T]
+\begin{column}{0.1\textwidth}
+\includegraphics[width=\textwidth]{images/fedora.png}
+\end{column}
+\begin{column}{0.9\textwidth}
+\highlighton{Fedora} (depuis 2003) distribution communautaire supervisée par Red Hat. Système d'exploitation complet et généraliste, composé uniquement de logiciels libres. Maintenu par sa communauté d'utilisateurs.
+\end{column}
+\end{columns}
+\vfill
+
+\begin{columns}[T]
+\begin{column}{0.1\textwidth}
+\includegraphics[width=\textwidth]{images/mandriva.png}
+\end{column}
+\begin{column}{0.9\textwidth}
+\highlighton{Mandriva} (depuis 1998) distribution internationale d'origine francaise éditée par la société Mandriva. Très orientée vers le grand public, conçue pour être facile d'installation et d'usage.
+\end{column}
+\end{columns}
+\vfill
+
+\begin{columns}[T]
+\begin{column}{0.1\textwidth}
+\includegraphics[width=\textwidth]{images/suse.png} 
+\end{column}
+\begin{column}{0.9\textwidth}
+\highlighton{Suse} (depuis 1994) distribution Linux majeure, d'origine allemande et principalement développée en Europe. Propose deux distributions principales : SUSE Linux Enterprise orientée vers les entreprises et openSUSE orientée vers le grand public.
+\end{column}
+\end{columns}
+
+\vfill
+
+\begin{columns}[T]
+\begin{column}{0.1\textwidth}
+\includegraphics[width=\textwidth]{images/ubuntu.png} 
+\end{column}
+\begin{column}{0.9\textwidth}
+\highlighton{Ubuntu} (depuis 2004) Distribution internationale orientée vers le grand public et sponsorisée par Canonical. Dispose d'une communauté d'utilisateurs du monde entier très dynamique.
+\end{column}
+\end{columns}
+
+\end{small}
+
+\note{324 distrib actuellement référencées sur http://distrowatch.com/stats.php?section=popularity}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Où trouvez les distributions ?}
+\vfill\vfill
+\begin{itemize}
+\item En téléchargement libre sur les sites des distributions\vfill
+\item Dans des magazines Linux\vfill
+\item En achetant une « boîte » (contenant les DVD, un manuel et un accès au service technique). Distributions commerciales uniquement. Comptez dans les 50 euros\vfill
+\item Lors d'une install-party\vfill
+\end{itemize}
+\vfill
+\end{frame}
+
+
+\begin{frame}
+\vfill
+\begin{center}
+\begin{Huge}
+\textbf{\highlighton{Le libre, au-delà du logiciel\dots{}}}
+\end{Huge}
+\end{center}
+\vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Le copyleft}
+
+\begin{columns}[T]
+\begin{column}{0.15\textwidth}
+\includegraphics[width=\textwidth]{images/copyleft.png}
+\end{column}
+\begin{column}{0.85\textwidth}
+ \highlighton{Possibilité donnée par l'auteur d'une \oe{}uvre soumise au droit d'auteur de copier, d'utiliser, d'étudier, de modifier et/ou de distribuer son \oe{}uvre dans la mesure où ces possibilités restent préservées.}
+\end{column}
+\end{columns}
+\vfill
+
+\begin{itemize}
+\item façon générale de rendre une \oe{}uvre libre
+\item différent du domaine public
+\note{La manière la plus simple de faire d'un programme un logiciel libre est de le distribuer dans le domaine public, sans copyright. Cela autorise les gens à partager le programme et leurs améliorations si le c\oe{}ur leur en dit. Mais cela autorise aussi des personnes indélicates à faire du programme un logiciel propriétaire. Ils peuvent très bien y effectuer des changements, juste quelques-uns ou plusieurs, et distribuer le résultat comme un logiciel propriétaire.\par}
+\item détermine comment l'\oe{}uvre est utilisée
+\item licences copyleft : GNU GPL, licence Art Libre, certaines licences Creative Commons
+\item pour choisir sa licence : \url{http://venividilibri.org}
+\note{les licences  Creative Commons avec clause « NC » et « ND » ne sont pas des licences libres mais des licences de libre diffusion)\par}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Musique Libre avec Jamendo}
+\framesubtitle{\url{http://www.jamendo.com/fr/}}
+
+\vfill
+
+\begin{columns}
+\begin{column}{0.8\textwidth}
+Jamendo est une communauté de musique libre, légale et illimitée publiée sous licences Creative Commons ou art libre.
+\end{column}
+\begin{column}{0.2\textwidth}
+\includegraphics[width=\textwidth]{images/jamendo_logo}
+\end{column}
+\end{columns}
+
+\vfill
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\includegraphics[width=1.1\textwidth]{images/jamendo}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+\item plus de 45 000 albums
+\item échange avec les artistes via les critiques
+\item licence à la carte
+\item les artistes augmentent leur visibilité
+\item et sont même rémunérés (dons, Revenue Share)
+\end{itemize}
+\end{column}
+\end{columns}
+\note{musique libre : musique qui n'est pas déposée dans des sociétés de gestion de droit d'auteurs (Sacem, Sabam, Gema, etc..). Les artistes choisissent de protéger leurs droits en utilisant des licences spéciales et non-exclusives telles que Creative Commons par exemple ou encore Licence Art Libre. Musique Libre ne veut pas forcement dire gratuite ou libre de tous droits, mais plutôt "certains droits réservés". Les artistes déterminent ces autorisations d'utilisation grâce à leur licence.\par}
+\note{paiment ? Revenue Share? : partage des revenus publicitaires que Jamendo redistribue équitablement aux artistes. En effet, 50\% des recettes publicitaires sont réparties aux artistes\par}
+\note{Contrairement aux idées reçues, l'inscription aux sociétés de collecte (SACEM, SABAM, SGAE, SIAE...) n'est pas une obligation pour les artistes.\par
+Les artistes disponibles sur Jamendo PRO ont opté pour un mode de distribution alternatif de leur musique : ils ont choisi de ne pas s'affilier aux sociétés de gestion et de collecte de droits d'auteurs.
+L'utilisation et la diffusion de leur musique n'entraînent aucune redevance à ces sociétés de gestion.
+Jamendo PRO se charge de collecter et redistribuer aux artistes 50\% des revenus au prorata des licences vendues.}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Framabook, le pari du livre libre}
+\framesubtitle{\url{http://www.framabook.org/}}
+
+\begin{center}
+\highlighton{Une collection de livres libres sur le logiciel libre}
+\end{center}
+\vfill
+
+\includegraphics[width=0.11\textwidth]{images/framabook1}
+\includegraphics[width=0.11\textwidth]{images/framabook2}
+\includegraphics[width=0.11\textwidth]{images/framabook3}
+\includegraphics[width=0.11\textwidth]{images/framabook4}
+\includegraphics[width=0.11\textwidth]{images/framabook5}
+\includegraphics[width=0.11\textwidth]{images/framabook6}
+\includegraphics[width=0.11\textwidth]{images/framabook7}
+\includegraphics[width=0.11\textwidth]{images/framabook8}
+\includegraphics[width=0.11\textwidth]{images/framabook9}
+\vfill
+\begin{itemize}
+\item Un projet original se démarquant de l'édition classique
+\item liberté d'utiliser, copier, modifer et distribuer leurs versions numériques
+\item ou tout simplement de tester, c'est-à-dire voir, avant d'acheter
+\item livres vendus au format papier (15 euros)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{D'autres livres libres}
+
+\vfill
+\begin{columns}[T]
+\begin{column}{0.2\textwidth}
+\includegraphics[width=1.1\textwidth]{images/inlibroveritas}
+\end{column}
+\begin{column}{0.8\textwidth}
+\highlighton{In Libro Veritas}
+\begin{itemize}
+\item permet de lire, télécharger et publier gratuitement vos oeuvres et ebooks en ligne et en livre papier
+\item 3397 \oe{}uvres du domaine public
+\item 14942 \oe{}uvres des auteurs in libro veritas (licences art libre et creative commons)
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vfill
+\begin{columns}[T]
+\begin{column}{0.2\textwidth}
+\begin{flushright}
+\includegraphics[width=0.5\textwidth]{images/wikibooks}
+\end{flushright}
+\end{column}
+\begin{column}{0.8\textwidth}
+\highlighton{Wikilivres}
+\begin{itemize}
+\item soutenu par la Wikimedia Foundation
+\item 389 livres communautaires
+\item sous licence Creative Commons attribution partage à l'identique et GFDL
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Graphisme}
+
+\vfill
+\begin{columns}[T]
+\begin{column}{0.2\textwidth}
+\includegraphics{images/4-libre_au_dela_logiciel/opendesktop-logo}
+\end{column}
+\begin{column}{0.8\textwidth}
+\highlighton{OpenDesktop.org fournit pour différents interfaces graphiques :}
+\begin{itemize}
+\item icônes
+\item papiers peints
+\item thèmes graphiques
+\item personnalisations d'applications.
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vfill\vfill
+Il existe aussi d'autres projets comme Open Font Library pour les polices de caractères ou Open Clip art Library pour les cliparts.
+
+\note{OpenDesktop disposent de différents sites pour les interfaces graphiques kde-looks.org et gnome-looks.org.\par}
+\note{http://openfontlibrary.org/ et http://www.openclipart.org/\par}
+\end{frame}
+
+\begin{frame}
+\frametitle{Films d'animation libres}
+\vspace{8mm}
+
+La fondation Blender a réalisé trois films d'animation libres (licence creative commons), en utilisant uniquement des logiciels libres.
+
+\includegraphics[width=\textwidth]{images/blender}
+\end{frame}
+
+\begin{frame}
+\frametitle{Licence}
+
+\begin{columns}[T]
+\begin{column}{0.9\textwidth}
+\begin{center}
+\begin{large}\highlighton{Cette présentation est placée sous Licence GNU FDL}\end{large}
+\end{center}
+\end{column}
+\begin{column}{0.1\textwidth}
+\includegraphics[width=\textwidth]{images/copyleft}
+\end{column}
+\end{columns}
+
+
+\vfill
+
+\begin{tiny}
+      Permission is granted to copy, distribute and/or modify this
+      document under the terms of the GNU Free Documentation License,
+      Version 1.3 or any later version published by the Free Software
+      Foundation; with no Invariant Sections, no Front-Cover Texts and
+      no Back-Cover Texts.  A copy of the license is included in the
+      section entitled "GNU Free Documentation License".
+\end{tiny}
+
+\vfill
+
+\begin{tiny}
+Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la
+	Licence GNU Free Documentation License, Version 1.3 ou ultérieure publiée par la Free Software
+	Foundation ; sans section inaltérable, sans texte de première page de couverture et sans texte
+	de dernière page de couverture. Une copie de cette Licence est incluse dans la section appelée
+	«~GNU Free Documentation License~» du code source de ce document.
+\end{tiny}
+\vfill
+
+\end{frame}
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                GNU Free Documentation License
+                 Version 1.3, 3 November 2008
+
+
+ Copyright (C) 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+     <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+0. PREAMBLE
+
+The purpose of this License is to make a manual, textbook, or other
+functional and useful document "free" in the sense of freedom: to
+assure everyone the effective freedom to copy and redistribute it,
+with or without modifying it, either commercially or noncommercially.
+Secondarily, this License preserves for the author and publisher a way
+to get credit for their work, while not being considered responsible
+for modifications made by others.
+
+This License is a kind of "copyleft", which means that derivative
+works of the document must themselves be free in the same sense.  It
+complements the GNU General Public License, which is a copyleft
+license designed for free software.
+
+We have designed this License in order to use it for manuals for free
+software, because free software needs free documentation: a free
+program should come with manuals providing the same freedoms that the
+software does.  But this License is not limited to software manuals;
+it can be used for any textual work, regardless of subject matter or
+whether it is published as a printed book.  We recommend this License
+principally for works whose purpose is instruction or reference.
+
+
+1. APPLICABILITY AND DEFINITIONS
+
+This License applies to any manual or other work, in any medium, that
+contains a notice placed by the copyright holder saying it can be
+distributed under the terms of this License.  Such a notice grants a
+world-wide, royalty-free license, unlimited in duration, to use that
+work under the conditions stated herein.  The "Document", below,
+refers to any such manual or work.  Any member of the public is a
+licensee, and is addressed as "you".  You accept the license if you
+copy, modify or distribute the work in a way requiring permission
+under copyright law.
+
+A "Modified Version" of the Document means any work containing the
+Document or a portion of it, either copied verbatim, or with
+modifications and/or translated into another language.
+
+A "Secondary Section" is a named appendix or a front-matter section of
+the Document that deals exclusively with the relationship of the
+publishers or authors of the Document to the Document's overall
+subject (or to related matters) and contains nothing that could fall
+directly within that overall subject.  (Thus, if the Document is in
+part a textbook of mathematics, a Secondary Section may not explain
+any mathematics.)  The relationship could be a matter of historical
+connection with the subject or with related matters, or of legal,
+commercial, philosophical, ethical or political position regarding
+them.
+
+The "Invariant Sections" are certain Secondary Sections whose titles
+are designated, as being those of Invariant Sections, in the notice
+that says that the Document is released under this License.  If a
+section does not fit the above definition of Secondary then it is not
+allowed to be designated as Invariant.  The Document may contain zero
+Invariant Sections.  If the Document does not identify any Invariant
+Sections then there are none.
+
+The "Cover Texts" are certain short passages of text that are listed,
+as Front-Cover Texts or Back-Cover Texts, in the notice that says that
+the Document is released under this License.  A Front-Cover Text may
+be at most 5 words, and a Back-Cover Text may be at most 25 words.
+
+A "Transparent" copy of the Document means a machine-readable copy,
+represented in a format whose specification is available to the
+general public, that is suitable for revising the document
+straightforwardly with generic text editors or (for images composed of
+pixels) generic paint programs or (for drawings) some widely available
+drawing editor, and that is suitable for input to text formatters or
+for automatic translation to a variety of formats suitable for input
+to text formatters.  A copy made in an otherwise Transparent file
+format whose markup, or absence of markup, has been arranged to thwart
+or discourage subsequent modification by readers is not Transparent.
+An image format is not Transparent if used for any substantial amount
+of text.  A copy that is not "Transparent" is called "Opaque".
+
+Examples of suitable formats for Transparent copies include plain
+ASCII without markup, Texinfo input format, LaTeX input format, SGML
+or XML using a publicly available DTD, and standard-conforming simple
+HTML, PostScript or PDF designed for human modification.  Examples of
+transparent image formats include PNG, XCF and JPG.  Opaque formats
+include proprietary formats that can be read and edited only by
+proprietary word processors, SGML or XML for which the DTD and/or
+processing tools are not generally available, and the
+machine-generated HTML, PostScript or PDF produced by some word
+processors for output purposes only.
+
+The "Title Page" means, for a printed book, the title page itself,
+plus such following pages as are needed to hold, legibly, the material
+this License requires to appear in the title page.  For works in
+formats which do not have any title page as such, "Title Page" means
+the text near the most prominent appearance of the work's title,
+preceding the beginning of the body of the text.
+
+The "publisher" means any person or entity that distributes copies of
+the Document to the public.
+
+A section "Entitled XYZ" means a named subunit of the Document whose
+title either is precisely XYZ or contains XYZ in parentheses following
+text that translates XYZ in another language.  (Here XYZ stands for a
+specific section name mentioned below, such as "Acknowledgements",
+"Dedications", "Endorsements", or "History".)  To "Preserve the Title"
+of such a section when you modify the Document means that it remains a
+section "Entitled XYZ" according to this definition.
+
+The Document may include Warranty Disclaimers next to the notice which
+states that this License applies to the Document.  These Warranty
+Disclaimers are considered to be included by reference in this
+License, but only as regards disclaiming warranties: any other
+implication that these Warranty Disclaimers may have is void and has
+no effect on the meaning of this License.
+
+2. VERBATIM COPYING
+
+You may copy and distribute the Document in any medium, either
+commercially or noncommercially, provided that this License, the
+copyright notices, and the license notice saying this License applies
+to the Document are reproduced in all copies, and that you add no
+other conditions whatsoever to those of this License.  You may not use
+technical measures to obstruct or control the reading or further
+copying of the copies you make or distribute.  However, you may accept
+compensation in exchange for copies.  If you distribute a large enough
+number of copies you must also follow the conditions in section 3.
+
+You may also lend copies, under the same conditions stated above, and
+you may publicly display copies.
+
+
+3. COPYING IN QUANTITY
+
+If you publish printed copies (or copies in media that commonly have
+printed covers) of the Document, numbering more than 100, and the
+Document's license notice requires Cover Texts, you must enclose the
+copies in covers that carry, clearly and legibly, all these Cover
+Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
+the back cover.  Both covers must also clearly and legibly identify
+you as the publisher of these copies.  The front cover must present
+the full title with all words of the title equally prominent and
+visible.  You may add other material on the covers in addition.
+Copying with changes limited to the covers, as long as they preserve
+the title of the Document and satisfy these conditions, can be treated
+as verbatim copying in other respects.
+
+If the required texts for either cover are too voluminous to fit
+legibly, you should put the first ones listed (as many as fit
+reasonably) on the actual cover, and continue the rest onto adjacent
+pages.
+
+If you publish or distribute Opaque copies of the Document numbering
+more than 100, you must either include a machine-readable Transparent
+copy along with each Opaque copy, or state in or with each Opaque copy
+a computer-network location from which the general network-using
+public has access to download using public-standard network protocols
+a complete Transparent copy of the Document, free of added material.
+If you use the latter option, you must take reasonably prudent steps,
+when you begin distribution of Opaque copies in quantity, to ensure
+that this Transparent copy will remain thus accessible at the stated
+location until at least one year after the last time you distribute an
+Opaque copy (directly or through your agents or retailers) of that
+edition to the public.
+
+It is requested, but not required, that you contact the authors of the
+Document well before redistributing any large number of copies, to
+give them a chance to provide you with an updated version of the
+Document.
+
+
+4. MODIFICATIONS
+
+You may copy and distribute a Modified Version of the Document under
+the conditions of sections 2 and 3 above, provided that you release
+the Modified Version under precisely this License, with the Modified
+Version filling the role of the Document, thus licensing distribution
+and modification of the Modified Version to whoever possesses a copy
+of it.  In addition, you must do these things in the Modified Version:
+
+A. Use in the Title Page (and on the covers, if any) a title distinct
+   from that of the Document, and from those of previous versions
+   (which should, if there were any, be listed in the History section
+   of the Document).  You may use the same title as a previous version
+   if the original publisher of that version gives permission.
+B. List on the Title Page, as authors, one or more persons or entities
+   responsible for authorship of the modifications in the Modified
+   Version, together with at least five of the principal authors of the
+   Document (all of its principal authors, if it has fewer than five),
+   unless they release you from this requirement.
+C. State on the Title page the name of the publisher of the
+   Modified Version, as the publisher.
+D. Preserve all the copyright notices of the Document.
+E. Add an appropriate copyright notice for your modifications
+   adjacent to the other copyright notices.
+F. Include, immediately after the copyright notices, a license notice
+   giving the public permission to use the Modified Version under the
+   terms of this License, in the form shown in the Addendum below.
+G. Preserve in that license notice the full lists of Invariant Sections
+   and required Cover Texts given in the Document's license notice.
+H. Include an unaltered copy of this License.
+I. Preserve the section Entitled "History", Preserve its Title, and add
+   to it an item stating at least the title, year, new authors, and
+   publisher of the Modified Version as given on the Title Page.  If
+   there is no section Entitled "History" in the Document, create one
+   stating the title, year, authors, and publisher of the Document as
+   given on its Title Page, then add an item describing the Modified
+   Version as stated in the previous sentence.
+J. Preserve the network location, if any, given in the Document for
+   public access to a Transparent copy of the Document, and likewise
+   the network locations given in the Document for previous versions
+   it was based on.  These may be placed in the "History" section.
+   You may omit a network location for a work that was published at
+   least four years before the Document itself, or if the original
+   publisher of the version it refers to gives permission.
+K. For any section Entitled "Acknowledgements" or "Dedications",
+   Preserve the Title of the section, and preserve in the section all
+   the substance and tone of each of the contributor acknowledgements
+   and/or dedications given therein.
+L. Preserve all the Invariant Sections of the Document,
+   unaltered in their text and in their titles.  Section numbers
+   or the equivalent are not considered part of the section titles.
+M. Delete any section Entitled "Endorsements".  Such a section
+   may not be included in the Modified Version.
+N. Do not retitle any existing section to be Entitled "Endorsements"
+   or to conflict in title with any Invariant Section.
+O. Preserve any Warranty Disclaimers.
+
+If the Modified Version includes new front-matter sections or
+appendices that qualify as Secondary Sections and contain no material
+copied from the Document, you may at your option designate some or all
+of these sections as invariant.  To do this, add their titles to the
+list of Invariant Sections in the Modified Version's license notice.
+These titles must be distinct from any other section titles.
+
+You may add a section Entitled "Endorsements", provided it contains
+nothing but endorsements of your Modified Version by various
+parties--for example, statements of peer review or that the text has
+been approved by an organization as the authoritative definition of a
+standard.
+
+You may add a passage of up to five words as a Front-Cover Text, and a
+passage of up to 25 words as a Back-Cover Text, to the end of the list
+of Cover Texts in the Modified Version.  Only one passage of
+Front-Cover Text and one of Back-Cover Text may be added by (or
+through arrangements made by) any one entity.  If the Document already
+includes a cover text for the same cover, previously added by you or
+by arrangement made by the same entity you are acting on behalf of,
+you may not add another; but you may replace the old one, on explicit
+permission from the previous publisher that added the old one.
+
+The author(s) and publisher(s) of the Document do not by this License
+give permission to use their names for publicity for or to assert or
+imply endorsement of any Modified Version.
+
+
+5. COMBINING DOCUMENTS
+
+You may combine the Document with other documents released under this
+License, under the terms defined in section 4 above for modified
+versions, provided that you include in the combination all of the
+Invariant Sections of all of the original documents, unmodified, and
+list them all as Invariant Sections of your combined work in its
+license notice, and that you preserve all their Warranty Disclaimers.
+
+The combined work need only contain one copy of this License, and
+multiple identical Invariant Sections may be replaced with a single
+copy.  If there are multiple Invariant Sections with the same name but
+different contents, make the title of each such section unique by
+adding at the end of it, in parentheses, the name of the original
+author or publisher of that section if known, or else a unique number.
+Make the same adjustment to the section titles in the list of
+Invariant Sections in the license notice of the combined work.
+
+In the combination, you must combine any sections Entitled "History"
+in the various original documents, forming one section Entitled
+"History"; likewise combine any sections Entitled "Acknowledgements",
+and any sections Entitled "Dedications".  You must delete all sections
+Entitled "Endorsements".
+
+
+6. COLLECTIONS OF DOCUMENTS
+
+You may make a collection consisting of the Document and other
+documents released under this License, and replace the individual
+copies of this License in the various documents with a single copy
+that is included in the collection, provided that you follow the rules
+of this License for verbatim copying of each of the documents in all
+other respects.
+
+You may extract a single document from such a collection, and
+distribute it individually under this License, provided you insert a
+copy of this License into the extracted document, and follow this
+License in all other respects regarding verbatim copying of that
+document.
+
+
+7. AGGREGATION WITH INDEPENDENT WORKS
+
+A compilation of the Document or its derivatives with other separate
+and independent documents or works, in or on a volume of a storage or
+distribution medium, is called an "aggregate" if the copyright
+resulting from the compilation is not used to limit the legal rights
+of the compilation's users beyond what the individual works permit.
+When the Document is included in an aggregate, this License does not
+apply to the other works in the aggregate which are not themselves
+derivative works of the Document.
+
+If the Cover Text requirement of section 3 is applicable to these
+copies of the Document, then if the Document is less than one half of
+the entire aggregate, the Document's Cover Texts may be placed on
+covers that bracket the Document within the aggregate, or the
+electronic equivalent of covers if the Document is in electronic form.
+Otherwise they must appear on printed covers that bracket the whole
+aggregate.
+
+
+8. TRANSLATION
+
+Translation is considered a kind of modification, so you may
+distribute translations of the Document under the terms of section 4.
+Replacing Invariant Sections with translations requires special
+permission from their copyright holders, but you may include
+translations of some or all Invariant Sections in addition to the
+original versions of these Invariant Sections.  You may include a
+translation of this License, and all the license notices in the
+Document, and any Warranty Disclaimers, provided that you also include
+the original English version of this License and the original versions
+of those notices and disclaimers.  In case of a disagreement between
+the translation and the original version of this License or a notice
+or disclaimer, the original version will prevail.
+
+If a section in the Document is Entitled "Acknowledgements",
+"Dedications", or "History", the requirement (section 4) to Preserve
+its Title (section 1) will typically require changing the actual
+title.
+
+
+9. TERMINATION
+
+You may not copy, modify, sublicense, or distribute the Document
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense, or distribute it is void, and
+will automatically terminate your rights under this License.
+
+However, if you cease all violation of this License, then your license
+from a particular copyright holder is reinstated (a) provisionally,
+unless and until the copyright holder explicitly and finally
+terminates your license, and (b) permanently, if the copyright holder
+fails to notify you of the violation by some reasonable means prior to
+60 days after the cessation.
+
+Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, receipt of a copy of some or all of the same material does
+not give you any rights to use it.
+
+
+10. FUTURE REVISIONS OF THIS LICENSE
+
+The Free Software Foundation may publish new, revised versions of the
+GNU Free Documentation License from time to time.  Such new versions
+will be similar in spirit to the present version, but may differ in
+detail to address new problems or concerns.  See
+http://www.gnu.org/copyleft/.
+
+Each version of the License is given a distinguishing version number.
+If the Document specifies that a particular numbered version of this
+License "or any later version" applies to it, you have the option of
+following the terms and conditions either of that specified version or
+of any later version that has been published (not as a draft) by the
+Free Software Foundation.  If the Document does not specify a version
+number of this License, you may choose any version ever published (not
+as a draft) by the Free Software Foundation.  If the Document
+specifies that a proxy can decide which future versions of this
+License can be used, that proxy's public statement of acceptance of a
+version permanently authorizes you to choose that version for the
+Document.
+
+11. RELICENSING
+
+"Massive Multiauthor Collaboration Site" (or "MMC Site") means any
+World Wide Web server that publishes copyrightable works and also
+provides prominent facilities for anybody to edit those works.  A
+public wiki that anybody can edit is an example of such a server.  A
+"Massive Multiauthor Collaboration" (or "MMC") contained in the site
+means any set of copyrightable works thus published on the MMC site.
+
+"CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0 
+license published by Creative Commons Corporation, a not-for-profit 
+corporation with a principal place of business in San Francisco, 
+California, as well as future copyleft versions of that license 
+published by that same organization.
+
+"Incorporate" means to publish or republish a Document, in whole or in 
+part, as part of another Document.
+
+An MMC is "eligible for relicensing" if it is licensed under this 
+License, and if all works that were first published under this License 
+somewhere other than this MMC, and subsequently incorporated in whole or 
+in part into the MMC, (1) had no cover texts or invariant sections, and 
+(2) were thus incorporated prior to November 1, 2008.
+
+The operator of an MMC Site may republish an MMC contained in the site
+under CC-BY-SA on the same site at any time before August 1, 2009,
+provided the MMC is eligible for relicensing.
+
+
+ADDENDUM: How to use this License for your documents
+
+To use this License in a document you have written, include a copy of
+the License in the document and put the following copyright and
+license notices just after the title page:
+
+    Copyright (c)  YEAR  YOUR NAME.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".
+
+If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
+replace the "with...Texts." line with this:
+
+    with the Invariant Sections being LIST THEIR TITLES, with the
+    Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
+
+If you have Invariant Sections without Cover Texts, or some other
+combination of the three, merge those two alternatives to suit the
+situation.
+
+If your document contains nontrivial examples of program code, we
+recommend releasing these examples in parallel under your choice of
+free software license, such as the GNU General Public License,
+to permit their use in free software.
