@@ -13,7 +13,7 @@
 \institute{Alternatives87}
 \author{Sylvain Floury et Ludovic Grossard}
 
-\date{1 avril 2011}
+\date{2 avril 2011}
 \logo{}
 
 \frame{\titlepage}
@@ -107,9 +107,179 @@ Impress est un logiciel de présentation qui vise à produire des diaporamas. Ces 
 \item choisissez image, et allez chercher l'image openoffice.png
 \item redimensionnez l'image (Maj pour conserver les proportions)
 \item centrez l'image horizontalement avec l'outil Alignement dans la barre d'outils en bas de l'écran
-\item lancez le diaporama 
+\item lancez le diaporama en utilisant le menu Diaporama -> Diaporama ou en utilisant le raccourci-clavier F5
 \end{itemize}
 
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ajoutons une nouvelle diapo}
+
+Nous allons ajouter une nouvelle diapositive à notre présentation
+\begin{itemize}
+\item Dans le volet Mise en page, faites un clic droit sur la troisième diapo (Titre, contenu), et choisissez Insérer une diapo.
+\item La nouvelle diapo avec la mise en page choisie est alors visible
+\item Modifiez le titre : Qu'est-ce qu'OpenOffice.org ?
+\item dans la zone de texte en-dessous, saisissez le texte suivant :
+\begin{verbatim}
+OpenOffice.org est une suite bureautique libre.
+\end{verbatim}
+\vfill
+\item en appuyant sur entrée, vous verrez qu'une nouvelle puce est ajoutée automatiquement.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ajoutons une nouvelle diapo}
+\begin{itemize}
+\item insérez le texte suivant :
+\begin{verbatim}
+Elle est composée des éléments suivants :
+\end{verbatim}
+\vfill
+puis appuyez sur entrée. Cliquez ensuite sur la flèche droite bleue dans la barre d'outils, ou bien faites Alt+Maj+Droite pour abaisser la puce d'un niveau. 
+\vfill
+\item Saisissez le texte suivant :
+\vfill
+\begin{verbatim}
+Un traitement de texte,
+Un tableur,
+Un logiciel de présentation,
+Un logiciel de dessin
+\end{verbatim}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Insérer une diapo plus complexe}
+\vfill
+Nous allons maintenant insérer une diapo un peu plus complexe.
+\vfill
+\begin{itemize}
+\item Dans le volet Mise en page, faites un clic droit sur la quatrième diapo (Titre et 2 contenus), et choisissez Insérer une diapo.
+\item remplacez le titre par défaut par « Format des fichiers »
+\vfill
+\item Dans le cadre de gauche, insérez le texte suivant :
+
+\begin{verbatim}
+Le format de documents utilisé 
+ativement par OpenOffice.org 
+est OpenDocument.
+\end{verbatim}
+\end{itemize}
+\vfill
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Insérer un tableau}
+
+Nous allons insérer un tableau dans la colonne de droite:
+
+\begin{itemize}
+\item Dans la colonne de droite, cliquez sur « insérer un tableau »
+\item une boîte de dialogue apparaît. Choisissez 4 lignes et 3 colonnes, puis validez
+\item le tableau est alors inséré. Ajoutez le contenu suivant :
+\vfill
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline Module &  OOo 1 &  OOo 2\\ 
+\hline  writer & sxw &  odt\\ 
+\hline  impress & sxi &  odp\\ 
+\hline draw & sxg & odg \\ 
+\hline Calc &  sxs & ods \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\vfill
+\end{itemize}
+Argh, il manque une ligne ! Voyons comment insérer une ligne dans le tableau\dots{}
+\end{frame}
+
+\begin{frame}
+\frametitle{Insérer une ligne dans un tableau}
+\begin{itemize}
+\item Placez-vous sur la dernière ligne du tableau
+\item cliquez avec le bouton droit de la souris et choisissez « Ligne / Insérer\dots{} »
+\item une boîte de dialogue apparaît alors et vous demande si vous souhaitez insérer la ligne avant ou après la ligne courante. Choisissez après et validez la boîte de dialogue.
+\item notez qu'il est aussi possible d'utiliser l'icône « ajouter une ligne » dans la barre d'outils qui apparaît dès que l'on clique sur le tableau
+\item ouf ! Vous pouvez terminer de saisir le contenu du tableau
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Mettre en forme le tableau}
+
+Un peu de cosmétique.
+
+\begin{itemize}
+\item centrez d'abord le tableau verticalement
+\item dans la zone des tâches, cliquez sur l'onglet « Ébauches de tableaux »
+\item sous « Afficher », cochez « première colonne ». La première colonne sera colorée.
+\item testez les autres options
+\item choisissez ensuite un style dans la liste proposée. Facile, non ?
+\item vous pouvez maintenant tester votre diaporama\dots{}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Gérer les transitions entre les diapos}
+
+\begin{itemize}
+\item Les transitions permettent de passer d'une diapositive à une autre en appliquant des effets graphiques.
+\item dans la zone des tâches, cliquez sur l'onglet « Transitions »
+\item choisissez une transition dans la liste. Vous en aurez alors un aperçu (si « Aperçu automatique » est coché tout en bas de la page)
+\item une transition douce comme « Fondu léger » conviendra parfaitement. Attention aux transitions trop évoluées, qui risquent de distraire, voire de lasser votre auditoire.
+\item choisissez la vitesse de la transition (lent, moyen, rapide)
+\item choisissez éventuellement un son (déconseillé)
+\item cliquez ensuite sur « Appliquer à toutes les diapos ».
+\item testez votre présentation
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{en-tête et pied de page}
+
+Nous allons insérer les numéros de diapo, la date, et le titre de la présentation dans le pied de page des diapos
+
+\begin{itemize}
+\item cliquez sur « Insertion - numéro de page » (ou insertion / date et heure)
+\item une boîte de dialogue apparaît alors.
+\item commençons par la date. Choisissez une date fixe en saisissant la date du jour. La date s'affichera en bas à gauche
+\item Saisissez le texte du pied de page : « Présentation de OpenOffice.org ». Ce texte apparaîtra en bas au centre de la diapo
+\item Cochez ensuite » Numéro de page », qui s'affichera en bas à droite. Cochez également « Ne pas afficher sur la première diapo » pour que le numéro de page soit masqué sur la diapo de titre.
+\item validez en cliquant sur « Appliquer partout »
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travail sur le masque des diapos}
+
+Compliquons un peu les choses. Nous allons modifier l'apparence de la présentation de manière globale
+
+\begin{itemize}
+\item Cliquez sur « Affichage / Masque / Masque des diapos »
+\item vous voyez alors le « modèle » de diapo.
+\item cliquez sur la zone de titre, et mettez le titre en gras (bouton B de la barre d'outil, ou CTRL+B)
+\item quittez le mode masque en cliquant sur le bouton « Fermer le mode masque »
+\item toutes les diapos ont maintenant le titre en gras.
+\item facile, non ?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travail sur le masque des diapos}
+
+\begin{itemize}
+\item Retournez dans le masque des diapos
+\item modifiez l'apparence des différents éléments des diapo (Format / Caractères et Format / Paragraphe)
+\item insérez l'image « copyleft.png » en bas à droite du masque, en la réduisant.
+\item l'image sera présente sur toutes les diapos !
+\item essayez de modifier l'apparence du pied de page, de la date et du numéro de diapo
+\end{itemize}
 \end{frame}
 
 \end{document}
