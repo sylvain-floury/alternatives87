@@ -1,45 +1,80 @@
-\documentclass[handout,notes=show]{transparents}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% pour la version transparents, décommenter la ligne ci-dessous
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{transparents}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% pour la version papier, décommenter les lignes ci-dessous
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[12pt,a4paper]{article}
+%\usepackage{beamerarticle}
+
+
+
+\mode<article>{\usepackage{geometry}}
+\mode<article>{\geometry{a4paper, tmargin=2cm,bmargin=2.5cm,lmargin=2cm,rmargin=2cm}}
+\mode<article>{\usepackage[french]{babel}}
+\mode<article>{\usepackage[T1]{fontenc}}
+\mode<article>{\usepackage{graphicx}}
+\mode<article>{\usepackage{setspace}}
+\mode<article>{\usepackage{tabularx}}
+\mode<article>{\usepackage[amssymb,cdot]{SIunits}}
+\mode<article>{\usepackage{amsmath}}
+\mode<article>{\usepackage{fvrb-ex}}
+\mode<article>{\usepackage{palatino}}
+
+\only<article>{\title{Créer des diaporamas avec Impress}}
+\only<article>{\author{Sylvain Floury et Ludovic Grossard\\\begin{footnotesize}
+Alternatives87 (\texttt{http://alternatives87.eu.org})
+\end{footnotesize}}}
+
+
 
 \pdfinfo
 {
-  /Title       (Les logiciels libres : l'informatique à la portée de tous)
+  /Title       (Créer des diaporamas avec Impress)
   /Creator     (LaTeX Beamer)
-  /Author      (Ludovic Grossard)
+  /Author      (Sylvain Floury et Ludovic Grossard)
 }
 
 \begin{document}
 
-\title[Impress]{Créer des diaporamas avec\\\begin{huge}Impress\end{huge}}
-\institute{Alternatives87}
-\author{Sylvain Floury et Ludovic Grossard}
+\only<presentation>{\title[Impress]{Créer des diaporamas avec\\\begin{huge}Impress\end{huge}}}
+\only<presentation>{\institute{Alternatives87}}
+\only<presentation>{\author{Sylvain Floury et Ludovic Grossard}}
+\only<presentation>{\date{2 avril 2011}}
+\only<presentation>{\logo{}}
 
-\date{2 avril 2011}
-\logo{}
+\only<article>{\maketitle}
 
 \frame{\titlepage}
 
 \begin{frame}
 \frametitle{OpenOffice.org}
-\vfill
+\only<presentation>{\vfill}
 Suite bureautique avec les logiciels suivants :
-\vfill
+\only<presentation>{\vfill}
 
 \begin{columns}[T]
+\only<presentation>{
 \begin{column}{0.40\textwidth}
 \begin{center}
 \includegraphics[width=1.2\textwidth]{images/openoffice}
 \end{center}
 \end{column}
+}
+
 
 \begin{column}{0.60\textwidth}
 \begin{center}
 \begin{itemize}
-\item Writer (traitement de texte)\vfill
-\item Calc (tableau)\vfill
-\item Impress (logiciel de présentation)\vfill
-\item Base (base de données)\vfill
-\item Module de dessin vectoriel\vfill
-\item Éditeur de formules mathématiques\vfill
+\item Writer (traitement de texte)\only<presentation>{\vfill}
+\item Calc (tableau)\only<presentation>{\vfill}
+\item Impress (logiciel de présentation)\only<presentation>{\vfill}
+\item Base (base de données)\only<presentation>{\vfill}
+\item Module de dessin vectoriel\only<presentation>{\vfill}
+\item Éditeur de formules mathématiques\only<presentation>{\vfill}
 \end{itemize}
 \end{center}
 \end{column}
@@ -80,9 +115,10 @@ Impress est un logiciel de présentation qui vise à produire des diaporamas. Ces 
 \item Lancez impress. 
 \item Vous arrivez alors dans l'assistant de présentation :
 \begin{center}
-\includegraphics[scale=0.3]{images/assistant}
+\only<article>{\includegraphics[scale=0.7]{images/assistant}}
+\only<presentation>{\includegraphics[scale=0.3]{images/assistant}}
 \end{center}
-\item Les thèmes par défaut sont peu nombreux. Nous allons utiliser un autre thème. Cliquez sur « Ouvrir une présentation existante », puis sur ouvrir. Allez chercher le fichier nommé atelier\_{}impress.odp
+\item Les thèmes par défaut sont peu nombreux. Nous allons utiliser un autre thème. Cliquez sur << Ouvrir une présentation existante >>, puis sur ouvrir. Allez chercher le fichier nommé atelier\_{}impress.odp
 \item Vous vous retrouvez devant une présentation vide avec un titre par défaut.
 \end{itemize}
 
@@ -90,9 +126,10 @@ Impress est un logiciel de présentation qui vise à produire des diaporamas. Ces 
 
 \begin{frame}
 \frametitle{Présentation de l'interface}
-\vfill
+\only<presentation>{\only<presentation>{\vfill}}
 \begin{center}
-\includegraphics[scale=0.35]{images/interface}
+\only<article>{\includegraphics[scale=0.5]{images/interface}}
+\only<presentation>{\includegraphics[scale=0.35]{images/interface}}
 \end{center}
 \end{frame}
 
@@ -100,14 +137,14 @@ Impress est un logiciel de présentation qui vise à produire des diaporamas. Ces 
 \frametitle{Présentation de l'interface}
 
 \begin{itemize}
-\item Remplacez le titre par défaut par « OpenOffice.org »
-\item dans le volet des tâches, vérifiez que vous êtes bien dans le panneau « Mise en page »
+\item Remplacez le titre par défaut par << OpenOffice.org >>
+\item dans le volet des tâches, vérifiez que vous êtes bien dans le panneau << Mise en page >>
 \item modifiez la mise en page en cliquant sur la troisième diapo : Titre, Contenu
 \item un nouvel élément apparaît sous le titre, permettant d'insérer quatre types d'objets : tableau, diagramme, image, vidéo
 \item choisissez image, et allez chercher l'image openoffice.png
 \item redimensionnez l'image (Maj pour conserver les proportions)
 \item centrez l'image horizontalement avec l'outil Alignement dans la barre d'outils en bas de l'écran
-\item lancez le diaporama en utilisant le menu Diaporama -> Diaporama ou en utilisant le raccourci-clavier F5
+\item lancez le diaporama en utilisant le menu Diaporama / Diaporama ou en utilisant le raccourci-clavier F5
 \end{itemize}
 
 \end{frame}
@@ -124,7 +161,7 @@ Nous allons ajouter une nouvelle diapositive à notre présentation
 \begin{verbatim}
 OpenOffice.org est une suite bureautique libre.
 \end{verbatim}
-\vfill
+\only<presentation>{\vfill}
 \item en appuyant sur entrée, vous verrez qu'une nouvelle puce est ajoutée automatiquement.
 \end{itemize}
 \end{frame}
@@ -136,11 +173,11 @@ OpenOffice.org est une suite bureautique libre.
 \begin{verbatim}
 Elle est composée des éléments suivants :
 \end{verbatim}
-\vfill
+\only<presentation>{\vfill}
 puis appuyez sur entrée. Cliquez ensuite sur la flèche droite bleue dans la barre d'outils, ou bien faites Alt+Maj+Droite pour abaisser la puce d'un niveau. 
-\vfill
+\only<presentation>{\vfill}
 \item Saisissez le texte suivant :
-\vfill
+\only<presentation>{\vfill}
 \begin{verbatim}
 Un traitement de texte,
 Un tableur,
@@ -153,13 +190,13 @@ Un logiciel de dessin
 
 \begin{frame}[fragile]
 \frametitle{Insérer une diapo plus complexe}
-\vfill
+\only<presentation>{\vfill}
 Nous allons maintenant insérer une diapo un peu plus complexe.
-\vfill
+\only<presentation>{\vfill}
 \begin{itemize}
 \item Dans le volet Mise en page, faites un clic droit sur la quatrième diapo (Titre et 2 contenus), et choisissez Insérer une diapo.
-\item remplacez le titre par défaut par « Format des fichiers »
-\vfill
+\item remplacez le titre par défaut par << Format des fichiers >>
+\only<presentation>{\vfill}
 \item Dans le cadre de gauche, insérez le texte suivant :
 
 \begin{verbatim}
@@ -168,7 +205,7 @@ ativement par OpenOffice.org
 est OpenDocument.
 \end{verbatim}
 \end{itemize}
-\vfill
+\only<presentation>{\vfill}
 \end{frame}
 
 
@@ -178,10 +215,10 @@ est OpenDocument.
 Nous allons insérer un tableau dans la colonne de droite:
 
 \begin{itemize}
-\item Dans la colonne de droite, cliquez sur « insérer un tableau »
+\item Dans la colonne de droite, cliquez sur << insérer un tableau >>
 \item une boîte de dialogue apparaît. Choisissez 4 lignes et 3 colonnes, puis validez
 \item le tableau est alors inséré. Ajoutez le contenu suivant :
-\vfill
+\only<presentation>{\vfill}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline Module &  OOo 1 &  OOo 2\\ 
@@ -192,7 +229,7 @@ Nous allons insérer un tableau dans la colonne de droite:
 \hline 
 \end{tabular} 
 \end{center}
-\vfill
+\only<presentation>{\vfill}
 \end{itemize}
 Argh, il manque une ligne ! Voyons comment insérer une ligne dans le tableau\dots{}
 \end{frame}
@@ -201,9 +238,9 @@ Argh, il manque une ligne ! Voyons comment insérer une ligne dans le tableau\dot
 \frametitle{Insérer une ligne dans un tableau}
 \begin{itemize}
 \item Placez-vous sur la dernière ligne du tableau
-\item cliquez avec le bouton droit de la souris et choisissez « Ligne / Insérer\dots{} »
+\item cliquez avec le bouton droit de la souris et choisissez << Ligne / Insérer\dots{} >>
 \item une boîte de dialogue apparaît alors et vous demande si vous souhaitez insérer la ligne avant ou après la ligne courante. Choisissez après et validez la boîte de dialogue.
-\item notez qu'il est aussi possible d'utiliser l'icône « ajouter une ligne » dans la barre d'outils qui apparaît dès que l'on clique sur le tableau
+\item notez qu'il est aussi possible d'utiliser l'icône << ajouter une ligne >> dans la barre d'outils qui apparaît dès que l'on clique sur le tableau
 \item ouf ! Vous pouvez terminer de saisir le contenu du tableau
 \end{itemize}
 
@@ -216,8 +253,8 @@ Un peu de cosmétique.
 
 \begin{itemize}
 \item centrez d'abord le tableau verticalement
-\item dans la zone des tâches, cliquez sur l'onglet « Ébauches de tableaux »
-\item sous « Afficher », cochez « première colonne ». La première colonne sera colorée.
+\item dans la zone des tâches, cliquez sur l'onglet << Ébauches de tableaux >>
+\item sous << Afficher >>, cochez << première colonne >>. La première colonne sera colorée.
 \item testez les autres options
 \item choisissez ensuite un style dans la liste proposée. Facile, non ?
 \item vous pouvez maintenant tester votre diaporama\dots{}
@@ -230,12 +267,12 @@ Un peu de cosmétique.
 
 \begin{itemize}
 \item Les transitions permettent de passer d'une diapositive à une autre en appliquant des effets graphiques.
-\item dans la zone des tâches, cliquez sur l'onglet « Transitions »
-\item choisissez une transition dans la liste. Vous en aurez alors un aperçu (si « Aperçu automatique » est coché tout en bas de la page)
-\item une transition douce comme « Fondu léger » conviendra parfaitement. Attention aux transitions trop évoluées, qui risquent de distraire, voire de lasser votre auditoire.
+\item dans la zone des tâches, cliquez sur l'onglet << Transitions >>
+\item choisissez une transition dans la liste. Vous en aurez alors un aperçu (si << Aperçu automatique >> est coché tout en bas de la page)
+\item une transition douce comme << Fondu léger >> conviendra parfaitement. Attention aux transitions trop évoluées, qui risquent de distraire, voire de lasser votre auditoire.
 \item choisissez la vitesse de la transition (lent, moyen, rapide)
 \item choisissez éventuellement un son (déconseillé)
-\item cliquez ensuite sur « Appliquer à toutes les diapos ».
+\item cliquez ensuite sur << Appliquer à toutes les diapos >>.
 \item testez votre présentation
 \end{itemize}
 \end{frame}
@@ -246,12 +283,12 @@ Un peu de cosmétique.
 Nous allons insérer les numéros de diapo, la date, et le titre de la présentation dans le pied de page des diapos
 
 \begin{itemize}
-\item cliquez sur « Insertion - numéro de page » (ou insertion / date et heure)
+\item cliquez sur << Insertion - numéro de page >> (ou insertion / date et heure)
 \item une boîte de dialogue apparaît alors.
 \item commençons par la date. Choisissez une date fixe en saisissant la date du jour. La date s'affichera en bas à gauche
-\item Saisissez le texte du pied de page : « Présentation de OpenOffice.org ». Ce texte apparaîtra en bas au centre de la diapo
-\item Cochez ensuite » Numéro de page », qui s'affichera en bas à droite. Cochez également « Ne pas afficher sur la première diapo » pour que le numéro de page soit masqué sur la diapo de titre.
-\item validez en cliquant sur « Appliquer partout »
+\item Saisissez le texte du pied de page : << Présentation de OpenOffice.org >>. Ce texte apparaîtra en bas au centre de la diapo
+\item Cochez ensuite >> Numéro de page >>, qui s'affichera en bas à droite. Cochez également << Ne pas afficher sur la première diapo >> pour que le numéro de page soit masqué sur la diapo de titre.
+\item validez en cliquant sur << Appliquer partout >>
 \end{itemize}
 \end{frame}
 
@@ -261,10 +298,10 @@ Nous allons insérer les numéros de diapo, la date, et le titre de la présentatio
 Compliquons un peu les choses. Nous allons modifier l'apparence de la présentation de manière globale
 
 \begin{itemize}
-\item Cliquez sur «~Affichage / Masque / Masque des diapos~»
-\item vous voyez alors le «~modèle~» de diapo.
+\item Cliquez sur <<~Affichage / Masque / Masque des diapos~>>
+\item vous voyez alors le <<~modèle~>> de diapo.
 \item cliquez sur la zone de titre, et mettez le titre en gras (bouton B de la barre d'outil, ou CTRL+B)
-\item quittez le mode masque en cliquant sur le bouton «~Fermer le mode masque~»
+\item quittez le mode masque en cliquant sur le bouton <<~Fermer le mode masque~>>
 \item toutes les diapos ont maintenant le titre en gras.
 \item facile, non ?
 \end{itemize}
@@ -276,7 +313,7 @@ Compliquons un peu les choses. Nous allons modifier l'apparence de la présentati
 \begin{itemize}
 \item Retournez dans le masque des diapos
 \item modifiez l'apparence des différents éléments des diapo (Format / Caractères et Format / Paragraphe)
-\item insérez l'image «~copyleft.png~» en bas à droite du masque, en la réduisant.
+\item insérez l'image <<~copyleft.png~>> en bas à droite du masque, en la réduisant.
 \item l'image sera présente sur toutes les diapos !
 \item essayez de modifier l'apparence du pied de page, de la date et du numéro de diapo
 \end{itemize}
@@ -286,12 +323,54 @@ Compliquons un peu les choses. Nous allons modifier l'apparence de la présentati
 \frametitle{Insérer des éléments graphiques}
 
 \begin{itemize}
-\item Vous disposez d'une barre d'outil «~Dessin~» en bas de l'écran permettant d'ajouter des formes graphiques (traits, flèches, rectangles\dots{})
+\item Vous disposez d'une barre d'outil <<~Dessin~>> en bas de l'écran permettant d'ajouter des formes graphiques (traits, flèches, rectangles\dots{})
 \item testez les différents éléments disponibles dans cette barre
 \item ajoutez deux bulles (légendes rectangulaires à coins arrondis) sous les colonnes 2 et 3 du tableau
-\item dans la première bulle (sous la colonne 2), écrivez «~Ancien format~»
-\item dans la seconde bulle (sous la colonne 3), écrivez «~Nouveau format~»
+\item dans la première bulle (sous la colonne 2), écrivez <<~Ancien format~>>
+\item dans la seconde bulle (sous la colonne 3), écrivez <<~Nouveau format~>>
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Transparence et animations}
+
+Ajoutons de la transparence
+\begin{itemize}
+\item Cliquez sur la première bulle et choisissez Format / Remplissage
+\item Choisissez une couleur de remplissage dans la liste
+\item cliquez ensuite sur l'onglet transparence, et choisissez une transparence de 50 \%
+\item faîtes de même pour l'autre bulle
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Transparence et animations}
+et maintenant une animation
+\begin{itemize}
+\item Dans la zone des tâches, choisissez <<~Animations personnalisées~>>. Le bouton <<~Ajouter~>> est grisé pour l'instant car aucun objet n'est sélectionné
+\item Cliquez sur la première bulle, puis sur le bouton <<~Ajouter~>>. Une boîte de dialogue apparaît
+\item Dans l'onglet <<Entrée~>>, choisissez l'animation <<Arrivée~>>
+\item validez par Ok
+\item faîtes de même avec la seconde bulle. Testez votre présentation.
+\end{itemize}
+
+\pause
+
+\begin{center}
+\textbf{Attention, utilisez les animations avec parcimonie !}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exporter la présentation}
+
+\begin{itemize}
+\item En utilisant le menu Fichier / Enregistrer sous, vous pouvez enregistrer la présentation dans un grand nombre de formats \emph{de présentation} (formats OOo 1 et 2, powerpoint 97 / 2000 / XP / 2007\dots{})
+\item vous pouvez également exporter en pdf : Fichier / Exporter au format pdf
+\item ou directement en pages html (Fichier / Exporter) pour publier sur un site internet
+\item ou encore en flash (Fichier / Exporter)
+\end{itemize}
+
 \end{frame}
 
 \end{document}
