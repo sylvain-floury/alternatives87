@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title[Impress]{Naviguer sur Internet avec \\\begin{huge}Firefox\end{huge}}
+\title[Firefox]{Naviguer sur Internet avec \\\begin{huge}Firefox\end{huge}}
 \institute{Alternatives87}
 \author{Sylvain Floury et Ludovic Grossard}
 
@@ -111,6 +111,52 @@ L'interface de Firefox est composée de différents éléments :
 \end{frame}
 
 \begin{frame}
+\frametitle{Ajuster la taille des caractères}
+
+Firefox permet de grossir ou diminuer le texte d'une page. 
+
+\begin{itemize}
+  \item Pour grossir le texte utilisez le raccourci ``Ctrl'' + ``+''.
+  \item Pour diminuer le texte utilisez le raccourci ``Ctrl'' + ``-''.
+  \item Pour revenir à la taille par défaut utilisez le raccourci ``Ctrl'' + ``0''.
+\end{itemize}
+
+Il est également possible de modifier la taille en utilisant la touche ``Ctrl'' et la molette de la souris.
+
+Notes
+http://www.mozilla.com/en-US/firefox/tips/
+  
+\end{frame}
+
+\begin{frame}
+\frametitle{Rechercher un mot dans une page}
+
+Pour rechercher un terme précis une fonction de recherche est disponible. 
+
+\begin{itemize}
+  \item Allez dans ``Édition > Rechercher''.
+  \item La barre de recherche apparait en bas de l'écran.
+  \item Saisissez le texte recherché dans la zone de texte.
+  \item Si un élément correspond il sera surligné en vert.
+  \item Les boutons ``Suivant'' et ``Précédent'' vous permettent de naviguer d'élément en élément.
+  \item Le bouton ``Tout surligner'' va surligner tous les éléments correspondant à la recherche.
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+\frametitle{Navigation en plein écran}
+
+Le navigateur propose de naviguer en plein écran. L'option est accessible depuis Affichage > Plein écran.
+Ceci vous permet d'utiliser l'intégralité de votre écran pour afficher le contenu. Tous les éléments d'interface vont disparaitre.
+
+Une fois dans ce mode, vous pouvez faire apparaitre la barre de navigation et la barre des onglets en plaçant votre curseur de souris dans la partie supérieure de l'écran.
+
+Pour revenir dans le mode normal cliquez sur le bouton Restaurer présent dans la barre de navigation.
+ 
+\end{frame}
+
+\begin{frame}
 \frametitle{Les onglets}
 
 Pour naviguer sur plusieurs pages en même temps, il possible d'utiliser des onglets.
@@ -121,7 +167,14 @@ Là encore plusieurs solutions pour ouvrir un onglet :
   \item Utilisez le raccourci Ctrl+T puis saisissez l'adresse.
   \item Cliquez sur un lien avec la molette de la souris. Ceci ouvrira le lien dans un nouvel onglet.
 \end{itemize}
-  
+
+Pour fermer l'onglet courant vous pouvez :
+
+\begin{itemize}
+  \item Utilisez le raccourci Ctrl+W.
+  \item Cliquez sur la croix dans la partie droite de l'onglet.
+\end{itemize}
+ 
 \end{frame}
 
 \begin{frame}
@@ -183,18 +236,6 @@ Pour mettre fin à la navigation privée, allez dans Outils > Arrêter la navigatio
 \end{frame}
 
 \begin{frame}
-\frametitle{Navigation en plein écran}
-
-Le navigateur propose de naviguer en plein écran. L'option est accessible depuis Affichage > Plein écran.
-Ceci vous permet d'utiliser l'intégralité de votre écran pour afficher le contenu. Tous les éléments d'interface vont disparaitre.
-
-Une fois dans ce mode, vous pouvez faire apparaitre la barre de navigation et la barre des onglets en plaçant votre curseur de souris dans la partie supérieure de l'écran.
-
-Pour revenir dans le mode normal cliquez sur le bouton Restaurer présent dans la barre de navigation.
- 
-\end{frame}
-
-\begin{frame}
 \frametitle{Personnaliser l'apparence de l'interface}
 
 Firefox propose de ``Personas'' qui sont des thèmes pour habiller l'interface.
@@ -202,8 +243,72 @@ Firefox propose de ``Personas'' qui sont des thèmes pour habiller l'interface.
 Pour cela allez dans Outils > Modules complémentaires. Le catalogue comporte une rubrique dédiée aux Personas.
 
 Vous trouvez dans cette rubrique les Personas triées par catégories. Un moteur de recherche est également disponible.
-Si vous passez votre souris au dessus d'un des Persona  de la liste il personnalisera momentanément votre Firefox.
+Si vous passez votre souris au dessus d'un des Personas  de la liste il personnalisera momentanément votre Firefox.
 Pour le choisir définitivement il vous faudra l'installer.
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Les modules complémentaires}
+
+Les modules complémentaires permettent d'enrichir Firefox en lui ajoutant des fonctionnalités.
+
+Ils s'installent à partir de l'onglet Catalogue qui met en avant différents modules. 
+Un moteur de recherche permet une sélection rapide fonction de mots clés.
+
+Effectuons un test avec le module Adblock Plus :
+
+\begin{itemize}
+ \item Saisissez Adblock dans le moteur de recherche.
+ \item Cliquez sur le bouton ``Installer'' qui correspond à Adblock Plus.
+ \item Une fois le module installé le bouton disparait et une notification vous invite à redémarrer Firefox.
+ \item Firefox redémarré vous trouverez le module dans l'onglet ``Extensions''. Cet onglet vous permet de gérer tous vos modules installés.
+\end{itemize}
+
+Attention à ne pas abuser des modules complémentaires, ceci aurait une incidence sur les performance de Firefox.
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Épingler un onglet}
+
+  Cette fonctionnalité est apparue avec la version 4 et permet de conserver un onglet ouvert même après avoir fermé Firefox.
+
+  \begin{itemize}
+   \item Faites un clic droit sur un onglet.
+   \item Cliquez sur ``Épingler cet onglet''.
+   \item Fermez votre navigateur puis rouvrez-le.
+   \item L'onglet épinglé et toujours présent.
+  \end{itemize}
+
+Pour annuler cela vous pouvez choisir de ``Relâcher l'onglet'' ou tout simplement de le fermer.
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Les groupes d'onglets}
+
+  Cette fonctionnalité est apparue avec la version 4 et permet de regrouper les onglets par groupes.
+  Les onglets sont par défaut dans un même groupe. 
+
+  \begin{itemize}
+   \item Cliquez sur la liste déroulante à droite de la barre d'onglets (ou utilisez le raccourci ``Ctrl'' + ``Shift'' + ``E'').
+   \item Pour créer un nouveau groupe eefectuez une selection en dehors d'un groupe existant.
+   \item Vous pouvez ensuite déplacer un onglet d'un groupe à un autre.
+   \item Pour choisir un groupe cliquez simplement sur un groupe.
+  \end{itemize}
+
+Si vous disposez d'onglets épinglés ils seront présents dans tous les groupes.
+
+Depuis La gestion des groupes d'onglets vous pouvez également :
+
+\begin{itemize}
+ \item Nommer les groupes d'onglets.
+ \item Rechercher un onglet à l'aide d'un moteur de recherche. L'onglet est mis en surbrillance.
+ \item Fermer un groupe à l'aide de la croix placée à droite.
+\end{itemize}
+
+
 
 \end{frame}
 
