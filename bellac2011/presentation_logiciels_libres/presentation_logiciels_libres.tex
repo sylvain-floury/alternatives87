@@ -1,16 +1,25 @@
-\documentclass[handout,notes=show]{transparents}
+% © 2011 Ludovic Grossard et Sylvain Floury
+% association Alternatives87
+% http://alternatives87.eu.org
+%
+% document sous licence GNU FDL version 1.3
+% voir le texte de la licence à la fin de ce document
+
+\documentclass[handout,notes=hide]{transparents}
 
 \pdfinfo
 {
   /Title       (Les logiciels libres : l'informatique à la portée de tous)
   /Creator     (LaTeX Beamer)
-  /Author      (Ludovic Grossard)
+  /Author      (Ludovic Grossard et Sylvain Floury)
 }
 
 \begin{document}
 
-\title[Les logiciels libres : l'informatique à la portée de tous]{Les logiciels libres :\\l'informatique à la portée de tous}
-\institute{Alternatives87}
+\title[Les logiciels libres : l'informatique à la portée de tous]{\visible<1-2>{Les logiciels libres :\\l'informatique à la portée de tous}\visible<2>{\linebreak \vspace{3mm} \begin{small}
+La culture libre : la connaissance à portée de tous
+\end{small}}}
+\institute{Alternatives87 (\texttt{\url{http://alternatives87.eu.org}})}
 \author{Sylvain Floury et Ludovic Grossard}
 
 \date{1\ier{} avril 2011}
@@ -33,8 +42,6 @@
 \frametitle{Les logiciels libres sont partout}
 \framesubtitle{et peut-être déjà chez vous\dots{}}
 
-\pause
-
 Avez-vous ?...
 \begin{itemize}
 \item une free,live,darty,alice,c,neuf box ?
@@ -45,22 +52,22 @@ Avez-vous ?...
 \item un téléphone wifi ?
 \item bien d'autres choses\dots{}
 \end{itemize}
-\pause
+
 \begin{center}
 \begin{large}
 Alors vous utilisez probablement déjà des logiciels libres
 \end{large}
 \end{center}
 
-\note<3>{tiré de la présentation de Gilles Blanc : \url{http://gblanc.blogs.linagora.com/index.php/post/2009/10/13/conference-April/Eyrolles-\%3A-le-debrief}\par}
+\note{tiré de la présentation de Gilles Blanc : \url{http://gblanc.blogs.linagora.com/index.php/post/2009/10/13/conference-April/Eyrolles-\%3A-le-debrief}\par}
 \end{frame}
 
 \begin{frame}[fragile]
 
 \frametitle{Qu'est-ce qu'un logiciel ?}
 \begin{itemize}
-\item Une application qui répond à un besoin (traitement de texte, programme de dessin, jeu\dots{}), \pause
-\item une suite d'instructions invisibles (et incompréhensibles) pour l'utilisateur.\pause
+\item Une application qui répond à un besoin (traitement de texte, programme de dessin, jeu\dots{}), 
+\item une suite d'instructions invisibles (et incompréhensibles) pour l'utilisateur.
 \vfill
 \begin{beamerboxesrounded}[shadow=true]{Extrait du navigateur firefox}
 \begin{verbatim}
@@ -78,11 +85,11 @@ Alors vous utilisez probablement déjà des logiciels libres
 \framesubtitle{Retour aux sources}
 \vfill
 Heureusement, le programmeur travaille sur une version plus\dots{} compréhensible (pour lui en tout cas) : \highlighton{le code source}
-\pause
+
 \begin{center}
 \includegraphics[width=0.8\textwidth]{images/code_firefox}
 \end{center}
-\pause
+
 \begin{center}
 Le code source est utilisé pour créer le logiciel (les 0 et les 1)
 \end{center}
@@ -124,16 +131,16 @@ Le code source est utilisé pour créer le logiciel (les 0 et les 1)
 \framesubtitle{privateur diraient certains\dots{}}
 
 \vfill
-\pause 
+
 Vous avez le produit fini\dots{}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{images/sable_chocolat}
 \end{center}
-\pause 
+\pause
 \begin{flushright}
 \dots{}mais pas la recette
 \end{flushright}
-
+\pause
 \begin{footnotesize}
 \begin{description}
 \item[Je voudrais en faire chez moi\dots{}\pause] Non, c'est interdit. La recette est secrète.\pause
@@ -186,7 +193,7 @@ Le logiciel libre vous garantit quatre libertés fondamentales :\pause
 \begin{itemize}
 \item crée la fondation du logiciel libre en 1985 (Free Software fundation ou FSF)
 \item Projet GNU : conception d'un système d'exploitation complet et entièrement libre
-\item Base légale des logiciels libres : GNU GPL
+\item Base légale des logiciels libres : \highlighton{licence GNU GPL}
 \item tout travail dérivé reste libre
 \end{itemize}
 \end{center}
@@ -194,7 +201,7 @@ Le logiciel libre vous garantit quatre libertés fondamentales :\pause
 \end{columns}
 \vfill
 \begin{center}
-Stallman : << Je peux définir le logiciel libre en trois mots :\par \highlighton{liberté}, \highlighton{égalité}, \highlighton{fraternité} >>
+R. M. Stallman : << Je peux définir le logiciel libre en trois mots :\par \highlighton{liberté}, \highlighton{égalité}, \highlighton{fraternité} >>
 \end{center}
 \end{frame}
 
@@ -245,13 +252,13 @@ Partage de la connaissance obtenu grâce à l'accès pour tous aux outils modernes 
 
 \frametitle{Firefox}
 \vfill
-Navigateur Web disponible sous différentes plateformes :
+Navigateur Web disponible sous différentes plates-formes :
 \vfill
 
 \begin{columns}
 \begin{column}{0.20\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/2-presentation_ll/firefox-wordmark-vertical}
+\includegraphics[width=\textwidth]{images/firefox-wordmark-vertical}
 \end{center}
 \end{column}
 
@@ -279,13 +286,13 @@ Il a joué un rôle particulièrement important au début des années 2000 (alternati
 
 \frametitle{Thunderbird}
 \vfill
-Client de messagerie disponible sous différentes plateformes :
+Client de messagerie disponible sous différentes plates-formes :
 \vfill
 
 \begin{columns}
 \begin{column}{0.20\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/2-presentation_ll/thunderbird-wordmark-vertical}
+\includegraphics[width=\textwidth]{images/thunderbird-wordmark-vertical}
 \end{center}
 \end{column}
 
@@ -314,17 +321,17 @@ Suite bureautique avec les logiciels suivants :
 \vfill
 
 \begin{columns}
-\begin{column}{0.20\textwidth}
+\begin{column}{0.40\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/2-presentation_ll/openoffice}
+\includegraphics[width=\textwidth]{images/openoffice}
 \end{center}
 \end{column}
 
-\begin{column}{0.80\textwidth}
+\begin{column}{0.60\textwidth}
 \begin{center}
 \begin{itemize}
 \item Writer (traitement de texte)\vfill
-\item Calc (tableau)\vfill
+\item Calc (tableur)\vfill
 \item Impress (logiciel de présentation)\vfill
 \item Base (base de données)\vfill
 \item Module de dessin vectoriel\vfill
@@ -348,17 +355,17 @@ Suite bureautique dérivée de OpenOffice.org (Fork). Elle comprend les mêmes élém
 \vfill
 
 \begin{columns}
-\begin{column}{0.20\textwidth}
+\begin{column}{0.40\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/2-presentation_ll/libreoffice}
+\includegraphics[width=\textwidth]{images/libreoffice}
 \end{center}
 \end{column}
 
-\begin{column}{0.80\textwidth}
+\begin{column}{0.60\textwidth}
 \begin{center}
 \begin{itemize}
 \item Writer (traitement de texte)\vfill
-\item Calc (tableau)\vfill
+\item Calc (tableur)\vfill
 \item Impress (logiciel de présentation)\vfill
 \item Base (base de données)\vfill
 \item Module de dessin vectoriel\vfill
@@ -368,7 +375,7 @@ Suite bureautique dérivée de OpenOffice.org (Fork). Elle comprend les mêmes élém
 \end{column}
 \end{columns}
 \vfill\vfill
-Elle est gérée par The Document Foundation.
+Elle est gérée par <<~The Document Foundation~>>.
 
 \note{\par}
 
@@ -378,13 +385,13 @@ Elle est gérée par The Document Foundation.
 
 \frametitle{GIMP}
 \vfill
-Outil de manipulation d'images et de photos. Il dispose des fonctionnalités suivantes:
+Outil de manipulation d'images et de photos. Il dispose des fonctionnalités suivantes :
 \vfill
 
 \begin{columns}
 \begin{column}{0.20\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/2-presentation_ll/gimp}
+\includegraphics[width=\textwidth]{images/gimp}
 \end{center}
 \end{column}
 
@@ -412,7 +419,7 @@ Outil de manipulation d'images et de photos. Il dispose des fonctionnalités suiv
 
 \begin{frame}
 
-\frametitle{MediWiki}
+\frametitle{MediaWiki}
 \vfill
 Moteur de Wikipédia, ce logiciel libre est écrit pour fonctionner sur un serveur Web.\\
 Il est utilisé pour les différents projets de la Wikimedia Foundation :
@@ -420,7 +427,7 @@ Il est utilisé pour les différents projets de la Wikimedia Foundation :
 \begin{columns}
 \begin{column}{0.20\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/2-presentation_ll/mediawiki_logo}
+\includegraphics[width=\textwidth]{images/mediawiki_logo}
 \end{center}
 \end{column}
 
@@ -439,7 +446,7 @@ Il est utilisé pour les différents projets de la Wikimedia Foundation :
 \end{column}
 \end{columns}
 
-\note{MediaWiki est ecrit en PHP et fonctionne avec PostgreSQL ou MySQL.\par}
+\note{MediaWiki est écrit en PHP et fonctionne avec PostgreSQL ou MySQL.\par}
 
 \end{frame}
 
@@ -578,7 +585,7 @@ Les distributions n'ont pas toutes la même coloration :
 
 \end{small}
 
-\note{324 distrib actuellement référencées sur http://distrowatch.com/stats.php?section=popularity}
+\note{324 distrib actuellement référencées sur \url{http://distrowatch.com/stats.php?section=popularity}}
 \end{frame}
 
 
@@ -707,7 +714,7 @@ Jamendo PRO se charge de collecter et redistribuer aux artistes 50\% des revenus
 \begin{column}{0.8\textwidth}
 \highlighton{In Libro Veritas}
 \begin{itemize}
-\item permet de lire, télécharger et publier gratuitement vos oeuvres et ebooks en ligne et en livre papier
+\item permet de lire, télécharger et publier gratuitement vos \oe{}uvres et ebooks en ligne et en livre papier
 \item 3397 \oe{}uvres du domaine public
 \item 14942 \oe{}uvres des auteurs in libro veritas (licences art libre et creative commons)
 \end{itemize}
@@ -739,10 +746,10 @@ Jamendo PRO se charge de collecter et redistribuer aux artistes 50\% des revenus
 
 \vfill
 \begin{columns}[T]
-\begin{column}{0.2\textwidth}
-\includegraphics{images/4-libre_au_dela_logiciel/opendesktop-logo}
+\begin{column}{0.4\textwidth}
+\includegraphics[width=\textwidth]{images/opendesktop-logo}
 \end{column}
-\begin{column}{0.8\textwidth}
+\begin{column}{0.6\textwidth}
 \highlighton{OpenDesktop.org fournit pour différents interfaces graphiques :}
 \begin{itemize}
 \item icônes
@@ -754,10 +761,10 @@ Jamendo PRO se charge de collecter et redistribuer aux artistes 50\% des revenus
 \end{columns}
 
 \vfill\vfill
-Il existe aussi d'autres projets comme Open Font Library pour les polices de caractères ou Open Clip art Library pour les cliparts.
+Il existe aussi d'autres projets comme \highlighton{Open Font Library} pour les polices de caractères ou \highlighton{Open Clip art Library} pour les cliparts.
 
 \note{OpenDesktop disposent de différents sites pour les interfaces graphiques kde-looks.org et gnome-looks.org.\par}
-\note{http://openfontlibrary.org/ et http://www.openclipart.org/\par}
+\note{\url{http://openfontlibrary.org/} et \url{http://www.openclipart.org/}\par}
 \end{frame}
 
 \begin{frame}
